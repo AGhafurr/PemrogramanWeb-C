@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+}
+body {
+  background-color: white;
+}
+
+.container {
+  height: 600px;
+  width: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #007bff;
+}
+
+.task {
+  box-shadow: 10px 10px 10px 10px, black;
+}
+
+.title {
+  padding-left: 20px;
+  font-size: px;
+  border-radius: 10px;
+}
+
+.title2 {
+  padding-left: 20px;
+  font-size: px;
+  border-radius: 10px;
+}
+
+.activity {
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.add {
+  padding: 14px 40px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 20px 20px 20px;
+}
+
+.addtask {
+  width: 600px;
+  height: 32px;
+  padding: 5px 5px 5px 10px;
+  text-align: start;
+  border-radius: 5px;
+  border-width: 0.1px;
+  margin: 0px 0px 20px 20px;
+}
+
+.tasks {
+  width: 450px;
+  height: 32px;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  border-width: 0.5px;
+  justify-content: space-between;
+}
+
+.edit {
+  padding: 14px 40px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: 0px 10px 0px 10px;
+}
+.delete {
+  padding: 14px 40px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+}
+
+.context {
+  padding: 30px;
+  background-color: white;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 10px;
+}
+.listTask {
+  border-radius: 8px;
+  border-width: 10px;
+  background-color: #17a2b8;
+  width: 820px;
+  height: 200px;
+}
+.a {
+  background-color: yellow;
+  padding: 10px;
+  border-color: black;
+  border-width: 10px;
+  height: auto;
+}
+
+.newtask {
+  background-color: white;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.new-task-form {
+  background-color: yellow;
+  padding: 10px;
+  border-color: black;
+  border-width: 10px;
+}
+
+ul {
+  list-style: none;
+}

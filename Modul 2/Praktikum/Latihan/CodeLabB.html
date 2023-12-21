@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Praktikum Modul 2</title>
+    <link rel="stylesheet" href="CodelabB.css" />
+  </head>
+  <body id="body">
+    <form id="form">
+      <label for="fname">Nama Lengkap:</label><br />
+      <input type="text" name="fname" id="fname" /><br />
+      <label for="femail">Email: </label><br />
+      <input type="text" name="femail" id="femail" /><br />
+      <label for="falamat">Alamat:</label><br />
+      <textarea name="falamat" id="falamat" rows="10"></textarea><br />
+      <button type="submit" id="button">Daftar</button>
+    </form>
+    <script>
+        function Form(){
+            getElementById("registrationForm")
+          .addEventListener("submit", function (event) {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var alamat = document.getElementById("alamat").value;
+  
+            if (nama === "" || email === "" || password === "") {
+              alert("Anda Harus Mengisi Data Dengan Lengkap");
+              event.preventDefault(); // Mencegah form disubmit jika ada data yang kosong
+            }
+          }}
+       
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum Modul 2</title>
+    <link rel="stylesheet" href="TodoList.css" />
+    <!-- <script src="ToDoList.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="Todolist">
+      <div class="newtask">
+        <h1 class="title">Add Activity</h1>
+        <div class="new-task-form">
+          <p class="activity">Activity</p>
+          <input
+            type="text"
+            class="addtask"
+            id="addtask"
+            placeholder="Are You Have New Activity?"
+          />
+          <button onclick="addTask()" value="Add" class="add">Add</button>
+        </div>
+      </div>
+
+      <div class="listTask">
+        <h1 class="title2">List Activities</h1>
+        <div class="a">
+          <ul class="task" id="task"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const taskList = document.getElementById("task");
+    const newTaskInput = document.getElementById("addtask");
+
+    function addTask() {
+      var taskText = document.getElementById("addtask").value;
+      if (taskText.trim() === "") return;
+
+      var listItem = document.createElement("li");
+      listItem.innerHTML = `
+    <input class="tasks" type="text" value="${taskText}" readonly>
+    <button class="edit" onclick="editTask(this)">Edit</button>
+    <button class="delete" onclick="deleteTask(this)">Delete</button>
+  `;
+      taskList.appendChild(listItem);
+      newTaskInput.value = "";
+    }
+
+    function editTask(button) {
+      const listItem = button.parentNode;
+      const taskInput = listItem.querySelector("input");
+      if (taskInput.readOnly) {
+        taskInput.readOnly = false;
+        button.textContent = "Save";
+      } else {
+        taskInput.readOnly = true;
+        button.textContent = "Edit";
+      }
+    }
+
+    function deleteTask(button) {
+      const listItem = button.parentNode;
+      taskList.removeChild(listItem);
+    }
+  </script>
+</html>

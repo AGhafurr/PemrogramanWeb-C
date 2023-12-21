@@ -1,0 +1,21 @@
+body {
+  background-color: blue;
+}
+form {
+  background-color: white;
+  position: absolute;
+  padding: 100;
+  margin-top: 350px;
+  margin-left: 700px;
+  max-width: 350px;
+  padding: 20px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: blueviolet;
+  border: 1px;
+  font-size: 15px;
+  
+}
