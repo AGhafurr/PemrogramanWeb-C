@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAP</title>
+    <style>
+      table,
+      th,
+      td {
+        padding: 4px;
+        border: 1px solid black;
+      }
+      th {
+        text-align: center;
+        padding: 5px;
+      }
+      label {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      input {
+        border: none;
+      }
+      button {
+        padding: 5px 40px 5px 40px;
+      }
+      .row {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>UAP Pemroraman Web</h1>
+    <table>
+      <tr>
+        <th>Kode</th>
+        <th>Barang</th>
+        <th>Harga</th>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>Barang A</td>
+        <td>10000</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Barang B</td>
+        <td>20000</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Barang C</td>
+        <td>30000</td>
+      </tr>
+    </table>
+    <br /><br />
+    <label>Inputan User</label>
+    <br /><br />
+    <table>
+      <tr>
+        <td>Masukkan Kode</td>
+        <td>:</td>
+        <td><input type="text" id="code" /></td>
+      </tr>
+      <tr>
+        <td>Banyaknya Barang</td>
+        <td>:</td>
+        <td><input type="number" id="jumlahBarang" /></td>
+      </tr>
+      <tr>
+        <td class="row">
+          <button type="submit" onclick="totalBarang()">Submit</button>
+        </td>
+        <td class="row"></td>
+        <td class="row"></td>
+      </tr>
+    </table>
+
+    <script>
+      function totalBarang() {
+        var kodeBarang = document.getElementById("code").value;
+        var jumlahBarang = document.getElementById("jumlahBarang").value;
+        var hargaBarang;
+
+        if (kodeBarang == "001") {
+          hargaBarang = 10000;
+        } else if (kodeBarang == "002") {
+          hargaBarang = 20000;
+        } else if (kodeBarang == "003") {
+          hargaBarang = 30000;
+        } else {
+          alert("Kode Barang tidak ada");
+          return;
+        }
+
+        var total = jumlahBarang * hargaBarang;
+        alert("Total Pembayaran Adalah: " + total);
+
+        var uang = prompt("Masukkan Uang User: ");
+
+        if (uang < total) {
+          alert("Uang anda Kurang");
+          return;
+        }
+
+        var kembalian = uang - total;
+        alert("Total Kembalian Anda adalah: " + kembalian);
+      }
+    </script>
+  </body>
+</html>
