@@ -1,0 +1,48 @@
+.nvvv {
+  margin: 50px;
+}
+
+.gmbr {
+  size: 15px;
+}
+
+.service-custom {
+  margin-bottom: 10px;
+}
+
+.fb {
+  margin-right: 10px;
+}
+
+.ig {
+  margin-right: 7px;
+}
+
+.service-customm {
+  margin: 10px;
+}
+
+.title-custom {
+  color: black;
+}
+
+.textdiatas {
+  color: white;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 500px;
+}
+
+.image {
+  position: relative;
+  display: flex;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+}
+.img-fluid {
+  max-width: 60%;
+  height: auto;
+}
