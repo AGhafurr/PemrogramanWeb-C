@@ -46,3 +46,16 @@
   max-width: 60%;
   height: auto;
 }
+
+.submit-btn {
+  width: 100%; /* Make the button take full width */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #675d50;
+  border: none;
+  border-radius: 5px;
+  text-align: center; /* Center-align the text */
+  display: block; /* Ensure it takes the full width */
+  margin: 0 auto; /* Center horizontally */
+}
